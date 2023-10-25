@@ -1,0 +1,47 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: GATEWAY-SERVICE
+
+  cloud:
+    gateway:
+      routes:
+      -  id: login-service-users
+         uri: lb://LOGIN-SERVICE
+         predicates:
+           - Path=/users/**
+      -  id: login-service-accounts
+         uri: lb://LOGIN-SERVICE
+         predicates:
+           - Path=/accounts/**
+      - id: transaction-service
+        uri: lb://TRANSACTION-SERVICE
+        predicates:
+           - Path=/transactions/**
+      - id: creditcard-service-cc
+        uri: lb://CREDITCARD-SERVICE
+        predicates:
+           - Path=/creditCard/**
+#      - id: creditcartd-service-cct
+#        uri: lb://CREDITCARD-SERVICE
+#        predicates:
+#          - Path=/creditCardTransactions/**
+#      - id: creditcartd-service-pay
+#        uri: lb://CREDITCARD-SERVICE
+#        predicates:
+#          - Path=/payment/**
+      #     - Path=/creditCardTransactions/**
+      #     - Path=/payment/**
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      hostname: localhost

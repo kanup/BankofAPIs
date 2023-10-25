@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@example.com",
+      "phoneNumber": "9493037428",
+      "password": "hashedPassword1",
+      "dob": "1990-01-15"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane@example.com",
+      "phoneNumber": "9493036937",
+      "password": "hashedPassword2",
+      "dob": "1985-05-20"
+    },
+    {
+      "firstName": "dhagdhagdhag",
+      "lastName": "sd",
+      "email": "asdhgasda@gmail.com",
+      "phoneNumber": "9876543210",
+      "password": "12323212321",
+      "dob": "2023-09-03",
+      "id": 3
+    },
+    {
+      "firstName": "Megana",
+      "lastName": "T",
+      "email": "megana@gmail.com",
+      "phoneNumber": "7411089779",
+      "password": "megana",
+      "dob": "2023-10-25",
+      "id": 4
+    }
+  ]
+}

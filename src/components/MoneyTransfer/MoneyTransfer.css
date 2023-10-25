@@ -1,0 +1,80 @@
+.transfer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    
+  }
+
+.transfer-form {
+    width: 700px;
+    padding: 50px;
+    padding-right: 80px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+/* .radio-group label {
+    margin-left: 3px;
+} */
+
+.transfer-form input,
+.transfer-form select {
+    width: 40%;
+    padding: 10px;
+    margin-top: 5px; /* Adjusted margin-top */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: -5px;
+}
+
+.transfer-form button {
+    width: 97%;
+    padding: 10px;
+    background-color: rgb(60, 16, 83);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Adjusted margin-top */
+}
+
+.transfer-form button:hover {
+    background-color: #00578a;
+}
+
+.input-element {
+    width: 50%
+}
+
+.transfer-container h2{
+    padding-bottom: 20px;
+}
+.error-message{
+color: green;
+text-align: center;
+}
+.success-message{
+color: darkred;
+text-align: center;
+}

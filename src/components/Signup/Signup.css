@@ -1,0 +1,63 @@
+/* Login Container */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140vh;
+    margin-top: 20px; /* Add top margin to push the container down */
+    padding: 20px;
+  }
+  
+  /* Login Form */
+  .signup-form {
+    width: 390px;
+    padding: 50px;
+    padding-right: 80px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 12px; /* Increased padding for more comfortable input */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounder corners */
+    font-size: 14px; /* Increased font size for better readability */
+    background-color: #f7f7f7; /* Light background color */
+    color: #333; /* Darker text color */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  .signup-form input:focus {
+    border-color: #0070a8; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 112, 168, 0.5); /* Add a subtle box shadow */
+  }
+  
+  
+  .signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(60,16,83);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 1px;
+  }
+  
+  .signup-form button:hover {
+    background-color: #00578a;
+  }
+  
+  
